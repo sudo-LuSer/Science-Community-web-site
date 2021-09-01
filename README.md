@@ -4,7 +4,7 @@
 
   <li>enter to this web site <a href="https://sciences-communication.netlify.app">HERE </a></li>
   
-  <li>Contact or Share or see the project</li>
+  <li>Contact & Share or see the projects</li>
   
   <li>Enjoy !</li>
 
