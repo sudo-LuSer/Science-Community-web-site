@@ -59,6 +59,8 @@ nav{
 
 	position: fixed;
 
+	z-index: 500;
+
 }
 
 li{
@@ -152,6 +154,22 @@ li:hover{
 	color: var(--purple-light);
 
 }
+
+#file{
+
+	background: var(--gray-75);
+
+	border-radius: 50px;
+
+	filter: drop-shadow(2px 4px 8px black);
+
+}
+
+#file:hover{
+
+	background:var(--yellow-gold);
+
+}
 	
 @media(max-width: 900px){
 
@@ -165,9 +183,7 @@ li:hover{
 
 	#Contactbtn{
 
-		top: 95%;
-
-		transform: translate(-50%, -50%);
+		top: 105%;
 
 	}
 
@@ -184,6 +200,8 @@ li:hover{
 		filter: drop-shadow(2px 4px 8px black);
 
 		position: fixed;
+
+		z-index: 500;
 
 	}
 
