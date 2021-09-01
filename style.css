@@ -155,6 +155,14 @@ li:hover{
 	
 @media(max-width: 900px){
 
+	#file{
+
+		height: 180px;
+
+		width: 180px;
+
+	}
+
 	#Contactbtn{
 
 		top: 95%;
