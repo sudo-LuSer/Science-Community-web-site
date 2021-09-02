@@ -147,11 +147,21 @@ li:hover{
 
 	font-size: 150%;
 
-	margin:10px;
-
 	text-decoration: none !important;
 
-	color: var(--purple-light);
+	color: var(--gray-15);
+
+	position: relative;
+
+	top: 150px;
+
+	filter: drop-shadow(2px 4px 8px var(--gray-80));
+
+}
+
+#phone_ms:hover,#phone_ss:hover{
+
+	color: var(--blue-dark-translucent);
 
 }
 
@@ -183,7 +193,9 @@ li:hover{
 
 	#Contactbtn{
 
-		top: 105%;
+		top: 95%;
+
+		transform: translate(-50% , -25%);
 
 	}
 
