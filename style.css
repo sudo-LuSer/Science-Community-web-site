@@ -23,6 +23,40 @@
 	--purple-mid: #9400d3;
 }
 
+#dark-mode{
+
+	position: relative;
+
+	top: 40px;
+
+	left: 10px;
+
+	background: var(--gray-15);
+
+	border-radius: 50px; 
+
+	border: none;
+
+}
+
+#dark-mode:hover{
+
+	background: var(--gray-45);
+
+}
+
+span{
+
+	color: rgb(195, 195,201) !important;
+
+}
+
+span:hover{
+
+	color: var(--yellow-gold) !important;
+
+}
+
 a{
 
 	text-decoration: none !important;
@@ -81,7 +115,15 @@ li:hover{
 
 #gitlink{
 
-	text-decoration: none !important;
+	color: rgb(195, 195,201);
+
+	text-decoration: underline !important;
+
+}
+
+#gitlink:hover{
+
+	color : var(--yellow-light);
 
 }
 
@@ -115,7 +157,7 @@ li:hover{
 
 	width: 240px;
 
-	color: white;
+	color: rgb(195, 195,200) !important;;
 
 	position: absolute;
 
@@ -131,7 +173,7 @@ li:hover{
 
 #Contactbtn:hover{
 
-	color: var(--gray-80);
+	color: var(--gray-80) !important;
 
 }
 
@@ -183,6 +225,12 @@ li:hover{
 	
 @media(max-width: 900px){
 
+	#dark-mode{
+
+		top: 0px;
+
+	}
+
 	#file{
 
 		height: 180px;
@@ -193,7 +241,7 @@ li:hover{
 
 	#Contactbtn{
 
-		top: 95%;
+		top: 80%;
 
 		transform: translate(-50% , -25%);
 
@@ -220,6 +268,18 @@ li:hover{
 	#menuX:hover{
 
 		background: var(--gray-45);
+
+	}
+
+	span{
+
+		font-size: 100% !important;
+
+	}
+
+	#Instuctions{
+
+		font-size: 110% !important;
 
 	}
 
