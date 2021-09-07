@@ -47,7 +47,7 @@
 
 span{
 
-	color: rgb(195, 195,201) !important;
+	color: rgb(195, 195,201);
 
 }
 
@@ -157,7 +157,7 @@ li:hover{
 
 	width: 240px;
 
-	color: rgb(195, 195,200) !important;;
+	color: var(--blue-dark) !important;;
 
 	position: absolute;
 
@@ -203,7 +203,7 @@ li:hover{
 
 #phone_ms:hover,#phone_ss:hover{
 
-	color: var(--blue-dark-translucent);
+	color: var(--blue-light);
 
 }
 

@@ -12,6 +12,32 @@ $('#dark-mode').click(function(){
 
 		$('body').css('filter','invert(1)');
 
+		$('span').css('filter','invert(0)');
+
+		$('span').css('color','black');
+
+		$('span').hover(function(){
+
+			$(this).css('color','rgb(10,60,220)');
+
+		});
+
+		$('#phone_ms').css('color','black');
+
+		$('#phone_ss').css('color','black');
+
+		$('#phone_ms').hover(function(){
+
+			$(this).css('color','var(--blue-dark-translucent)');
+
+		});
+
+		$('#phone_ss').hover(function(){
+
+			$(this).css('color','var(--blue-dark-translucent)');
+
+		});
+
 		check=false;
 
 	}
@@ -25,6 +51,30 @@ $('#dark-mode').click(function(){
 		$('img').css('filter','invert(0)');
 
 		$('body').css('filter','invert(0)');
+
+		$('span').css('color','rgb(195, 195,201)');
+
+		$('span').hover(function(){
+
+			$(this).css('color','rgb(195, 195,201)');
+
+		});
+
+		$('#phone_ms').css('color','var(--gray-15)');
+
+		$('#phone_ss').css('color','var(--gray-15)');
+
+		$('#phone_ms').hover(function(){
+
+			$(this).css('color','var(--blue-light)');
+
+		});
+
+		$('#phone_ss').hover(function(){
+
+			$(this).css('color','var(--blue-light)');
+
+		});
 
 		check=true;
 
