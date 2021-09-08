@@ -38,6 +38,10 @@ $('#dark-mode').click(function(){
 
 		});
 
+		$('#Instuctions').css('color','rgb(242,256,216)');
+
+		$('#Contactbtn').css('color','rgb(242,256,216)');
+
 		check=false;
 
 	}
@@ -75,6 +79,10 @@ $('#dark-mode').click(function(){
 			$(this).css('color','var(--blue-light)');
 
 		});
+
+		$('#Instuctions').css('color','rgb(195, 195,201)');
+
+		$('#Contactbtn').css('color','var(--blue-dark)');
 
 		check=true;
 
