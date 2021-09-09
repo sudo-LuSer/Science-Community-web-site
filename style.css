@@ -211,7 +211,7 @@ li:hover{
 
 	background: var(--gray-75);
 
-	border-radius: 50px;
+	border-radius: 60px;
 
 	filter: drop-shadow(2px 4px 8px black);
 
@@ -233,9 +233,9 @@ li:hover{
 
 	#file{
 
-		height: 180px;
+		height: 150px;
 
-		width: 180px;
+		width: 150px;
 
 	}
 
