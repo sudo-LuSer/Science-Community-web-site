@@ -34,37 +34,19 @@
 
 }
 
-#dark-mode{
-
-	position: relative;
-
-	top: 75px;
-
-	left: 10px;
-
-	background: var(--secondary-background);
-
-	border-radius: 50px; 
-
-	border: none;
-
-}
-
-#dark-mode:hover{
-
-	background: var(--light-red);
-
-}
-
 span{
 
 	color: var(--territory-text);
+
+	filter: drop-shadow(2px 4px 8px var(--dark-shadow));
 
 }
 
 span:hover{
 
 	color: var(--light-red) !important;
+
+	filter: drop-shadow(2px 4px 8px var(--dark-shadow));
 
 }
 
@@ -114,9 +96,9 @@ li{
 
 	display: inline-block;
 
-	padding-left: 10px;
+	padding-top: 15px;
 
-	padding-top: 10px;
+	padding-left: 15px;
 
 	color: var(--territory-text);
 
@@ -166,7 +148,11 @@ li:hover{
 
 	background: var(--light-red);
 
-	color: var(--primary-background)
+	color: var(--primary-background);
+
+	top: 17%;
+
+	filter: drop-shadow(2px 4px 8px black);
 
 }
 
@@ -199,6 +185,10 @@ li:hover{
 	background-color: var(--red) !important;
 
 	color: var(--primary-background);
+
+	top: 65%;
+
+	filter: drop-shadow(2px 4px 8px var(--dark-shadow));
 }
 
 #menuX{
@@ -207,7 +197,7 @@ li:hover{
 
 }
 
-#phone_ms,#phone_ss{
+#phone_ms,#phone_ss,#phone_cs{
 
 	font-size: 150%;
 
@@ -223,7 +213,7 @@ li:hover{
 
 }
 
-#phone_ms:hover,#phone_ss:hover{
+#phone_ms:hover,#phone_ss:hover,#phone_cs:hover{
 
 	color: var(--red);
 
@@ -242,15 +232,139 @@ li:hover{
 	background:var(--light-red);
 
 }
+
+.contactTitle{
+
+	color:var(--territory-text);
+
+}
+
+.form{
+
+	position: relative;
+
+	top: 10px;
+
+}
+
+.mailBTN,.MyPhoneNum{
+
+	background: var(--secondary-background);
+
+	border: 1px var(--light-red) solid;
+
+	color: var(--territory-text);
+
+	height: 80px;
+
+	width: 350px;
+
+	font-size:150%;
+
+}
+
+.mailBTN:hover,.MyPhoneNum:hover{
+
+	border: 1px var(--light-red) solid;
+
+	background-color: var(--red);
+
+	color: var(--secondary-background);
+
+	filter: drop-shadow(2px 4px 8px var(--dark-shadow));
+
+	position: relative;
+
+	left: 20px;
+
+}
+
+#Share{
+
+	height: 50px;
+
+	width: 250px;
+
+	background: var(--secondary-background);
+
+	border: 1px var(--red) solid;
+
+	font-size:120%;
+
+	color: var(--territory-text);
+
+}
+
+#Share:hover{
+
+	background: var(--red);
+
+	color: var(--secondary-background);
+
+}
+
+.File{
+
+	color: var(--red);
+
+	font-size: 100%;
+
+	border: none !important;
+
+}
+
+input,textarea{
+
+	background: var(--secondary-background);
+
+	border:1px var(--red) solid;
+
+	font-size: 100%;
+
+	height: 45px;
+
+	width: 350px;
+
+	margin: 5px;
+
+	color: var(--red);
+
+}
+
+input::placeholder,textarea::placeholder{
+
+	color: var(--white);
+
+}
+
+textarea{
+
+	width: 300PX !important;
+
+	height: 100px;
+
+}
 	
 @media(max-width: 900px){
 
-	#dark-mode{
+	input{
 
-		top: 0px;
+		width: 291px;
 
 	}
 
+	.form{
+
+		top: 15px;
+
+	}
+
+	.mailBTN,.MyPhoneNum{
+
+		width: 300px;
+
+	}
+	
 	#file{
 
 		height: 150px;
@@ -261,9 +375,13 @@ li:hover{
 
 	#Contactbtn{
 
-		top: 80%;
+		top: 95%;
 
-		transform: translate(-50% , -25%);
+	}
+
+	#Contactbtn:hover{
+
+		top: 90%;
 
 	}
 
@@ -287,7 +405,7 @@ li:hover{
 
 	#menuX:hover{
 
-		background: var(--light-red);
+		background: var(--red);
 
 	}
 
@@ -298,6 +416,8 @@ li:hover{
 	}
 
 	#Instuctions{
+
+		top: 20%;
 
 		font-size: 110% !important;
 
