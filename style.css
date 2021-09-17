@@ -362,8 +362,24 @@ textarea{
 	transform  : translate(-50%,-50%);
 
 }
+
+.Sent{
+
+	background: var(--red);
+
+	border-radius: 50px;
+
+	position: absolute;
+
+	left: 50%;
+
+	top: 35%;
+
+	transform: translate(-50% , -50%);
+
+}
 	
-@media(max-width: 900px){
+@media(max-width: 950px){
 
 	input{
 
