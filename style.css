@@ -217,6 +217,8 @@ li:hover{
 
 	color: var(--red);
 
+	border-bottom:5px var(--red) solid;
+
 }
 
 #file{
@@ -261,6 +263,8 @@ li:hover{
 
 	font-size:150%;
 
+	margin: 2.5px;
+
 }
 
 .mailBTN:hover,.MyPhoneNum:hover{
@@ -292,6 +296,8 @@ li:hover{
 	font-size:120%;
 
 	color: var(--territory-text);
+
+	margin: 2.5px;
 
 }
 
@@ -325,7 +331,7 @@ input,textarea{
 
 	width: 350px;
 
-	margin: 5px;
+	margin: 2.5px;
 
 	color: var(--red);
 
