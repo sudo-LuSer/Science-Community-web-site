@@ -1,0 +1,1 @@
+setInterval(function(){ window.location.href = 'index_.html'; }, 1580);
