@@ -42,6 +42,22 @@ span{
 
 }
 
+.dlabel{
+
+	position: relative;
+
+	top: 100px;
+
+	float: right;
+
+}
+
+.DarkBnt:hover{
+
+	background: var(--red);
+
+}
+
 span:hover{
 
 	color: var(--light-red) !important;
@@ -305,6 +321,8 @@ li:hover{
 
 	color: var(--secondary-background);
 
+	filter: drop-shadow(2px 4px 8px var(--dark-shadow));
+
 }
 
 .File{
@@ -332,6 +350,8 @@ input,textarea{
 	margin: 2.5px;
 
 	color: var(--red);
+
+	filter: drop-shadow(2px 4px 8px var(--dark-shadow));
 
 }
 
@@ -378,6 +398,12 @@ textarea{
 }
 	
 @media(max-width: 950px){
+
+	.dlabel{
+
+		top: 10px;
+
+	}
 
 	textarea{
 
