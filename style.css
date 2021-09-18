@@ -138,8 +138,6 @@ li:hover{
 
 	font-size: 130%;
 
-	filter: drop-Shadow(2px 4px 8px black);
-
 	border: 1px var(--light-red) solid;
 
 }
@@ -151,8 +149,6 @@ li:hover{
 	color: var(--primary-background);
 
 	top: 17%;
-
-	filter: drop-shadow(2px 4px 8px black);
 
 }
 
@@ -194,6 +190,8 @@ li:hover{
 #menuX{
 
 	visibility: hidden;
+
+	background: var(--card-background);
 
 }
 
@@ -259,7 +257,7 @@ li:hover{
 
 	height: 80px;
 
-	width: 350px;
+	width: 355.5px;
 
 	font-size:150%;
 
@@ -287,7 +285,7 @@ li:hover{
 
 	height: 50px;
 
-	width: 250px;
+	width: 355.5px;
 
 	background: var(--secondary-background);
 
@@ -345,7 +343,7 @@ input::placeholder,textarea::placeholder{
 
 textarea{
 
-	width: 300PX !important;
+	width: 349.5px;
 
 	height: 100px;
 
@@ -381,9 +379,15 @@ textarea{
 	
 @media(max-width: 950px){
 
+	textarea{
+
+		width: 294.5PX !important;
+
+	}
+
 	input{
 
-		width: 291px;
+		width: 296.5px;
 
 	}
 
@@ -393,7 +397,7 @@ textarea{
 
 	}
 
-	.mailBTN,.MyPhoneNum{
+	.mailBTN,.MyPhoneNum,#Share{
 
 		width: 300px;
 
@@ -431,8 +435,6 @@ textarea{
 
 		filter: drop-shadow(2px 4px 8px var(--dark-shadow));
 
-		position: fixed;
-
 		z-index: 500;
 
 	}
@@ -451,7 +453,7 @@ textarea{
 
 	#Instuctions{
 
-		top: 20%;
+		top: 15%;
 
 		font-size: 110% !important;
 
