@@ -323,6 +323,8 @@ form{
 
 	margin: 2.5px;
 
+	box-shadow: 2px 4px 8px var(--dark-shadow);
+
 }
 
 #Share:hover{
@@ -330,8 +332,6 @@ form{
 	background: var(--red);
 
 	color: var(--secondary-background);
-
-	filter: drop-shadow(2px 4px 8px var(--dark-shadow));
 
 }
 
@@ -361,7 +361,7 @@ input,textarea{
 
 	color: var(--red);
 
-	filter: drop-shadow(2px 4px 8px var(--dark-shadow));
+	box-shadow: 2px 4px 8px var(--dark-shadow);
 
 }
 
@@ -376,6 +376,8 @@ textarea{
 	width: 349.5px;
 
 	height: 100px;
+
+	box-shadow: 2px 4px 8px var(--dark-shadow);
 
 }
 

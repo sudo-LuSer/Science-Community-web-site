@@ -30,11 +30,15 @@ $('.DarkBtn').click(function(){
 
 			$(this).css('background','var(--red)');
 
+			$(this).css('color','var(--secondary-background)');
+
 		});
 
 		$('textarea').click(function(){
 
 			$(this).css('background','var(--red)');
+
+			$(this).css('color','var(--secondary-background)');
 
 		});
 
