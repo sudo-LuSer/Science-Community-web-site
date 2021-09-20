@@ -1,3 +1,3 @@
 setInterval(function(){
-	window.location.href='index_.html'
+	window.location.href='index_.php'
 },2000);

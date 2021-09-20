@@ -1,1 +1,1 @@
-setInterval(function(){ window.location.href = 'index_.html'; }, 1580);
+setInterval(function(){ window.location.href = 'index_.php'; }, 1580);
