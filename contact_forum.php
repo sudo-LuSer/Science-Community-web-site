@@ -45,7 +45,7 @@
 
 			<br>
 
-		<form class="form" form action="" method="post" >
+		<form class="form" action="" method="post" >
 
 			<input type="text" name="name" placeholder="Enter your name :" required>
 
@@ -87,38 +87,33 @@
 
 
 <?php 
+	if(isset($_POST['submit'])){
 
-function Send___(){
-  	
-  	sleep(5);
+	    $to = "hhitar9485@gmail.com";
 
-  	header('Location: <ital>messageSent.php</ital>');
+	    $from = $_POST['email'];
 
-}
+	    $subject = "Form submission";
+	    
+	    $subject2 = "Copy of your form submission";
+	    
+	    $message = $_POST['name'] . " wrote the following:" . "\n\n" . $_POST['message'];
+	    
+	    $message2 = "Here is a copy of your message " . $_POST['name'] . "\n\n" . $_POST['message'];
 
-if(isset($_POST['submit'])){
-    $to = "hhitar9485@gmail.com"; // this is your Email address
+	    
+	    $headers = "From:" . $from;
+	    
+	    $headers2 = "From:" . $to;
+	    
+	    mail($to,$subject,$message,$headers);
+	    
+	    mail($from,$subject2,$message2,$headers2); 
 
-    $from = $_POST['email']; // this is the sender's Email address
-    
-    $subject = "Form submission";
-    
-    $subject2 = "Copy of your form submission";
-    
-    $message = $_POST['name'] . " wrote the following:" . "\n\n" . $_POST['message'];
-    
-    $message2 = "Here is a copy of your message " . $_POST['name'] . "\n\n" . $_POST['message'];
+	    $url = 'http://sciences-community.epizy.com/messageSent.php';
 
-    
-    $headers = "From:" . $from;
-    
-    $headers2 = "From:" . $to;
-    
-    mail($to,$subject,$message,$headers);
-    
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $POST['name'] . ", we will contact you shortly.";
-    }
+	    header( "Location: $url" );
+	
+	}
 
-    Send___(); 
 ?>
