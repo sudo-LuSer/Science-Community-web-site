@@ -45,13 +45,13 @@
 
 			<br>
 
-		<form class="form" method="GET">
+		<form class="form" form action="" method="post" >
 
 			<input type="text" name="name" placeholder="Enter your name :" required>
 
 			<br>
 
-			<input type="email" name="emaill" placeholder="your email please !" required class="inputemail">
+			<input type="email" name="email" placeholder="your email please !" required class="inputemail">
 
 			<br>
 
@@ -62,11 +62,11 @@
 			
 			<BR>
 
-			<textarea class="text" placeholder="Enter your message here :" name="msg"></textarea>
+			<textarea class="text" placeholder="Enter your message here :" name="message"></textarea>
 
 			<br>
 
-			<button id="Share" type="submit" name="btn">Submit</button>
+			<button id="Share" name="submit" value="Submit">Submit</button>
 
 			<br>
 
@@ -84,49 +84,41 @@
 
 </html>
 
-<?php
-	
-	$name;$eml;$msg;
-	
-	if(isset($_GET['name'])){
 
-		$name=$_GET['name'];
 
-	}
+<?php 
 
-	if(isset($_GET['emaill'])){
+function Send___(){
+  	
+  	sleep(5);
 
-		$eml=$_GET['emaill'];
+  	header('Location: <ital>messageSent.php</ital>');
 
-	}
+}
 
-	if(isset($_GET['msg'])){
+if(isset($_POST['submit'])){
+    $to = "hhitar9485@gmail.com"; // this is your Email address
 
-		$msg=$_GET['msg'];
+    $from = $_POST['email']; // this is the sender's Email address
+    
+    $subject = "Form submission";
+    
+    $subject2 = "Copy of your form submission";
+    
+    $message = $_POST['name'] . " wrote the following:" . "\n\n" . $_POST['message'];
+    
+    $message2 = "Here is a copy of your message " . $_POST['name'] . "\n\n" . $_POST['message'];
 
-	}
+    
+    $headers = "From:" . $from;
+    
+    $headers2 = "From:" . $to;
+    
+    mail($to,$subject,$message,$headers);
+    
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $POST['name'] . ", we will contact you shortly.";
+    }
 
-	 $to      = 'hhitar9485@gmail.com';
-     $subject = 'Sciences';
-     $message = $msg;
-     $headers = 'From: '.$eml. "\r\n" .
-     'Reply-To: '.$eml. "\r\n" .
-     'X-Mailer: PHP/' . phpversion();
-
-     mail($to, $subject, $message, $headers);
-
-    $success = mail($to, $subject, $message, $headers);
-
-	if (!$success and isset($_GET['btn'])) {
-
-	    header("Location: messageSent.php");
-	
-	}
-
-	else if($success and isset($_GET['btn']){
-
-		header("Location: messageSent.php");
-
-	}
-
+    Send___(); 
 ?>
